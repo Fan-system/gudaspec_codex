@@ -1,0 +1,4 @@
+interface:
+  display_name: "GudaSpec"
+  short_description: "Run OpenSpec RPI workflow in Codex"
+  default_prompt: "Use the gudaspec skill to run the appropriate RPI phase for this repository, keep the workflow evidence-driven, and validate each phase before moving on."
