@@ -18,7 +18,7 @@ By the end of this phase, implementation should not need to invent product behav
 - When constraints are still missing, escalate to the user instead of guessing.
 - Use subagents for large audits, cross-module spec analysis, and invariant extraction when that reduces main-agent context pressure. The main agent remains responsible for synthesis, final decisions, and spec edits.
 - Planning must produce formal artifacts that implementation can execute against, but it should stay at the design, task, and validation level rather than descending into code-level patch design.
-
+- When listing tasks, each task should have a distinct outcome and be self-contained; one task should not implicitly embed other tasks.
 ## Required Inputs
 
 Before planning, gather:

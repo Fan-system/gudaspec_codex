@@ -18,7 +18,7 @@ Implementation is not for deciding the product. It is for carrying an already-co
 - Verification is part of implementation, not a separate afterthought.
 - Prefer simple, explicit code over speculative abstraction.
 - Stop and surface conflicts when the repository reality diverges from the spec.
-
+- Tasks delegated to sub-agents should be granular, independent, and specific, to prevent the sub-agents from diverging or running for excessive periods.
 ## Required Inputs
 
 Before coding, confirm:
@@ -42,7 +42,6 @@ If Plan is still unresolved, do not start coding.
 - Subagents must return `unified diff patch` output for their assigned task, plus touched files, task-local checks or observations, and assumptions.
 - Do not directly apply or copy subagent patches into the repository without review and rewrite.
 - After the main agent completes a task, require an additional review pass by a separate subagent before running downstream test-and-closeout work.
-
 ## Workflow
 
 ### 1. Confirm the Implementation Target
